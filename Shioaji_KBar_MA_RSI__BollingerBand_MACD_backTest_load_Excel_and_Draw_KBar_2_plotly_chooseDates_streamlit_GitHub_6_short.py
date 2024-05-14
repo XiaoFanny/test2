@@ -7,7 +7,7 @@ import numpy as np
 #from talib.abstract import SMA,EMA, WMA, RSI, BBANDS, MACD
 #import sys
 import indicator_f_Lo2_short,datetime, indicator_forKBar_short
-#import datetime
+import datetime
 import pandas as pd
 import streamlit as st 
 import streamlit.components.v1 as stc 
@@ -38,7 +38,7 @@ def load_data(url):
 	return df
 
 
-df_original = pd.read_data("kbars_2330_2022-01-01-2022-11-18.pkl")
+df_original = load_data("kbars_2330_2022-01-01-2022-11-18.pkl")
 
 
 #df.columns  ## Index(['Unnamed: 0', 'time', 'open', 'low', 'high', 'close', 'volume','amount'], dtype='object')
