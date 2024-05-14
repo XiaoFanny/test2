@@ -38,7 +38,7 @@ def load_data(url):
 	return df
 
 
-df_original = pd.read_data('kbars_2330_2022-01-01-2022-11-18.pkl')
+df_original = pd.read_data("kbars_2330_2022-01-01-2022-11-18.pkl")
 
 
 #df.columns  ## Index(['Unnamed: 0', 'time', 'open', 'low', 'high', 'close', 'volume','amount'], dtype='object')
